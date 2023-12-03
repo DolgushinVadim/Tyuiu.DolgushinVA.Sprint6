@@ -48,7 +48,7 @@ namespace Tyuiu.DolgushinVA.Sprint6.Task2.V9
 
         private void buttonHelp_DVA_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Таск 2 выполнен студентом группы ИИП6-23-3 Долгушин Вадим", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("Таск 2 выполнил студент группы ИИП6-23-3 Долгушин Вадим Алексеевич", "Сообщение", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
     }
 }

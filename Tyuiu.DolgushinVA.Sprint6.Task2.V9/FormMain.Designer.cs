@@ -29,9 +29,9 @@ namespace Tyuiu.DolgushinVA.Sprint6.Task2.V9
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend4 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.groupBoxTask_DVA = new System.Windows.Forms.GroupBox();
             this.textBoxTask_DVA = new System.Windows.Forms.TextBox();
             this.groupBoxDataInput_DVA = new System.Windows.Forms.GroupBox();
@@ -137,18 +137,18 @@ namespace Tyuiu.DolgushinVA.Sprint6.Task2.V9
             // 
             // chartFunction_DVA
             // 
-            chartArea3.Name = "ChartArea1";
-            this.chartFunction_DVA.ChartAreas.Add(chartArea3);
-            legend3.Name = "Legend1";
-            this.chartFunction_DVA.Legends.Add(legend3);
+            chartArea4.Name = "ChartArea1";
+            this.chartFunction_DVA.ChartAreas.Add(chartArea4);
+            legend4.Name = "Legend1";
+            this.chartFunction_DVA.Legends.Add(legend4);
             this.chartFunction_DVA.Location = new System.Drawing.Point(183, 41);
             this.chartFunction_DVA.Name = "chartFunction_DVA";
-            series3.ChartArea = "ChartArea1";
-            series3.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
-            series3.IsVisibleInLegend = false;
-            series3.Legend = "Legend1";
-            series3.Name = "Series1";
-            this.chartFunction_DVA.Series.Add(series3);
+            series4.ChartArea = "ChartArea1";
+            series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Spline;
+            series4.IsVisibleInLegend = false;
+            series4.Legend = "Legend1";
+            series4.Name = "Series1";
+            this.chartFunction_DVA.Series.Add(series4);
             this.chartFunction_DVA.Size = new System.Drawing.Size(539, 394);
             this.chartFunction_DVA.TabIndex = 2;
             this.chartFunction_DVA.Text = "chart1";
@@ -234,6 +234,7 @@ namespace Tyuiu.DolgushinVA.Sprint6.Task2.V9
             this.Controls.Add(this.groupBoxTask_DVA);
             this.MaximizeBox = false;
             this.Name = "FormMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Спринт 6 | Таск 2 | Вариант 9 | Долгушин В. А.";
             this.groupBoxTask_DVA.ResumeLayout(false);
             this.groupBoxTask_DVA.PerformLayout();
