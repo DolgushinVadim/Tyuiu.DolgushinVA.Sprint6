@@ -205,6 +205,7 @@ namespace Tyuiu.DolgushinVA.Sprint6.Task6.V18
             this.Controls.Add(this.panelTop_DVA);
             this.MaximizeBox = false;
             this.Name = "FormMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Спринт 6 | Таск 6 | Вариант 18 | Долгушин В. А.";
             this.panelLeft_DVA.ResumeLayout(false);
             this.groupBoxDataInput_DVA.ResumeLayout(false);
