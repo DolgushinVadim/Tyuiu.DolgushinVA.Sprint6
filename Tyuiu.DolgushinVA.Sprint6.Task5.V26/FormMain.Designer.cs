@@ -29,22 +29,22 @@ namespace Tyuiu.DolgushinVA.Sprint6.Task5.V26
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-            System.Windows.Forms.DataVisualization.Charting.Legend legend1 = new System.Windows.Forms.DataVisualization.Charting.Legend();
-            System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
+            System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+            System.Windows.Forms.DataVisualization.Charting.Legend legend3 = new System.Windows.Forms.DataVisualization.Charting.Legend();
+            System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
             this.groupBoxTask_DVA = new System.Windows.Forms.GroupBox();
-            this.groupBoxDataOutput_DVA = new System.Windows.Forms.GroupBox();
             this.textBoxTask_DVA = new System.Windows.Forms.TextBox();
-            this.dataGridViewNums_DVA = new System.Windows.Forms.DataGridView();
-            this.labelResult_DVA = new System.Windows.Forms.Label();
+            this.groupBoxDataOutput_DVA = new System.Windows.Forms.GroupBox();
             this.chartDiag_DVA = new System.Windows.Forms.DataVisualization.Charting.Chart();
+            this.labelResult_DVA = new System.Windows.Forms.Label();
+            this.dataGridViewNums_DVA = new System.Windows.Forms.DataGridView();
             this.buttonDone_DVA = new System.Windows.Forms.Button();
             this.buttonOpenFile_DVA = new System.Windows.Forms.Button();
             this.buttonHelp_DVA = new System.Windows.Forms.Button();
             this.groupBoxTask_DVA.SuspendLayout();
             this.groupBoxDataOutput_DVA.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNums_DVA)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartDiag_DVA)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNums_DVA)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBoxTask_DVA
@@ -56,6 +56,17 @@ namespace Tyuiu.DolgushinVA.Sprint6.Task5.V26
             this.groupBoxTask_DVA.TabIndex = 0;
             this.groupBoxTask_DVA.TabStop = false;
             this.groupBoxTask_DVA.Text = "Условие:";
+            // 
+            // textBoxTask_DVA
+            // 
+            this.textBoxTask_DVA.Location = new System.Drawing.Point(6, 21);
+            this.textBoxTask_DVA.Multiline = true;
+            this.textBoxTask_DVA.Name = "textBoxTask_DVA";
+            this.textBoxTask_DVA.ReadOnly = true;
+            this.textBoxTask_DVA.Size = new System.Drawing.Size(503, 54);
+            this.textBoxTask_DVA.TabIndex = 0;
+            this.textBoxTask_DVA.Text = "Прочитать данные из файла InPutFileTask5.txt. Вывести в dataGridView\r\nвсе числа, " +
+    "кратные 5, и построить диаграмму по этим значениям.";
             // 
             // groupBoxDataOutput_DVA
             // 
@@ -69,16 +80,32 @@ namespace Tyuiu.DolgushinVA.Sprint6.Task5.V26
             this.groupBoxDataOutput_DVA.TabStop = false;
             this.groupBoxDataOutput_DVA.Text = "Ввод данных:";
             // 
-            // textBoxTask_DVA
+            // chartDiag_DVA
             // 
-            this.textBoxTask_DVA.Location = new System.Drawing.Point(6, 21);
-            this.textBoxTask_DVA.Multiline = true;
-            this.textBoxTask_DVA.Name = "textBoxTask_DVA";
-            this.textBoxTask_DVA.ReadOnly = true;
-            this.textBoxTask_DVA.Size = new System.Drawing.Size(503, 54);
-            this.textBoxTask_DVA.TabIndex = 0;
-            this.textBoxTask_DVA.Text = "Прочитать данные из файла InPutFileTask5.txt. Вывести в dataGridView\r\nвсе числа, " +
-    "кратные 5, и построить диаграмму по этим значениям.";
+            chartArea3.Name = "ChartArea1";
+            this.chartDiag_DVA.ChartAreas.Add(chartArea3);
+            legend3.Name = "Legend1";
+            this.chartDiag_DVA.Legends.Add(legend3);
+            this.chartDiag_DVA.Location = new System.Drawing.Point(151, 41);
+            this.chartDiag_DVA.Name = "chartDiag_DVA";
+            this.chartDiag_DVA.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
+            series3.ChartArea = "ChartArea1";
+            series3.IsVisibleInLegend = false;
+            series3.Legend = "Legend1";
+            series3.Name = "Series1";
+            this.chartDiag_DVA.Series.Add(series3);
+            this.chartDiag_DVA.Size = new System.Drawing.Size(717, 460);
+            this.chartDiag_DVA.TabIndex = 2;
+            this.chartDiag_DVA.Text = "chart1";
+            // 
+            // labelResult_DVA
+            // 
+            this.labelResult_DVA.AutoSize = true;
+            this.labelResult_DVA.Location = new System.Drawing.Point(6, 21);
+            this.labelResult_DVA.Name = "labelResult_DVA";
+            this.labelResult_DVA.Size = new System.Drawing.Size(80, 17);
+            this.labelResult_DVA.TabIndex = 1;
+            this.labelResult_DVA.Text = "Результат:";
             // 
             // dataGridViewNums_DVA
             // 
@@ -90,33 +117,6 @@ namespace Tyuiu.DolgushinVA.Sprint6.Task5.V26
             this.dataGridViewNums_DVA.RowTemplate.Height = 24;
             this.dataGridViewNums_DVA.Size = new System.Drawing.Size(139, 460);
             this.dataGridViewNums_DVA.TabIndex = 0;
-            // 
-            // labelResult_DVA
-            // 
-            this.labelResult_DVA.AutoSize = true;
-            this.labelResult_DVA.Location = new System.Drawing.Point(6, 21);
-            this.labelResult_DVA.Name = "labelResult_DVA";
-            this.labelResult_DVA.Size = new System.Drawing.Size(80, 17);
-            this.labelResult_DVA.TabIndex = 1;
-            this.labelResult_DVA.Text = "Результат:";
-            // 
-            // chartDiag_DVA
-            // 
-            chartArea1.Name = "ChartArea1";
-            this.chartDiag_DVA.ChartAreas.Add(chartArea1);
-            legend1.Name = "Legend1";
-            this.chartDiag_DVA.Legends.Add(legend1);
-            this.chartDiag_DVA.Location = new System.Drawing.Point(151, 41);
-            this.chartDiag_DVA.Name = "chartDiag_DVA";
-            this.chartDiag_DVA.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.Bright;
-            series1.ChartArea = "ChartArea1";
-            series1.IsVisibleInLegend = false;
-            series1.Legend = "Legend1";
-            series1.Name = "Series1";
-            this.chartDiag_DVA.Series.Add(series1);
-            this.chartDiag_DVA.Size = new System.Drawing.Size(717, 460);
-            this.chartDiag_DVA.TabIndex = 2;
-            this.chartDiag_DVA.Text = "chart1";
             // 
             // buttonDone_DVA
             // 
@@ -161,14 +161,16 @@ namespace Tyuiu.DolgushinVA.Sprint6.Task5.V26
             this.Controls.Add(this.buttonDone_DVA);
             this.Controls.Add(this.groupBoxDataOutput_DVA);
             this.Controls.Add(this.groupBoxTask_DVA);
+            this.MaximizeBox = false;
             this.Name = "FormMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Спринт 6 | Таск 5 | Вариант 26 | Долгушин В. А.";
             this.groupBoxTask_DVA.ResumeLayout(false);
             this.groupBoxTask_DVA.PerformLayout();
             this.groupBoxDataOutput_DVA.ResumeLayout(false);
             this.groupBoxDataOutput_DVA.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNums_DVA)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.chartDiag_DVA)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridViewNums_DVA)).EndInit();
             this.ResumeLayout(false);
 
         }
