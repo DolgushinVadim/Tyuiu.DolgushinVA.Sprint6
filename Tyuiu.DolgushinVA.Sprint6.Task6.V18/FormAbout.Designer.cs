@@ -73,6 +73,7 @@ namespace Tyuiu.DolgushinVA.Sprint6.Task6.V18
             this.Controls.Add(this.buttonOk_DVA);
             this.MaximizeBox = false;
             this.Name = "FormAbout";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "О программе";
             this.groupBoxInfo_DVA.ResumeLayout(false);
             this.groupBoxInfo_DVA.PerformLayout();
