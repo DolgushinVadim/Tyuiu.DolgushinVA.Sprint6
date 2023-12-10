@@ -63,24 +63,28 @@ namespace Tyuiu.DolgushinVA.Sprint6.Task7.V15
         }
         private void buttonSaveFile_DVA_Click(object sender, EventArgs e)
         {
-            saveFileDialogMatrix_DVA.FileName = "OutputFileTask7.csv";
+            saveFileDialogMatrix_DVA.FileName = "OutPutFileTask7.csv";
             saveFileDialogMatrix_DVA.InitialDirectory = Directory.GetCurrentDirectory();
             saveFileDialogMatrix_DVA.ShowDialog();
+
             string path = saveFileDialogMatrix_DVA.FileName;
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
+
             if (fileExists)
             {
                 File.Delete(path);
             }
+
             int rows = dataGridViewOutMatrix_DVA.RowCount;
-            int columns = dataGridViewOutMatrix_DVA.ColumnCount;
+            int colums = dataGridViewOutMatrix_DVA.ColumnCount;
+
             string str = "";
             for (int i = 0; i < rows; i++)
             {
-                for (int j = 0; j < columns; j++)
+                for (int j = 0; j < colums; j++)
                 {
-                    if (j != columns - 1)
+                    if (j != colums - 1)
                     {
                         str = str + dataGridViewOutMatrix_DVA.Rows[i].Cells[j].Value + ";";
                     }
@@ -88,9 +92,9 @@ namespace Tyuiu.DolgushinVA.Sprint6.Task7.V15
                     {
                         str = str + dataGridViewOutMatrix_DVA.Rows[i].Cells[j].Value;
                     }
-                    File.AppendAllText(path, str + Environment.NewLine);
-                    str = "";
                 }
+                File.AppendAllText(path, str + Environment.NewLine);
+                str = "";
             }
         }
         private void buttonOpenFile_DVA_Click(object sender, EventArgs e)
