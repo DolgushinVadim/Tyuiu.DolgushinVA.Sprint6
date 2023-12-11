@@ -11,7 +11,7 @@ namespace Tyuiu.DolgushinVA.Sprint6.Task7.V15.Test
         [TestMethod]
         public void ValidGetMatrix()
         {
-            string path = @"C:\DataSprint6\InPutFileTask7V15.csv";
+            string path = @"C:\Users\vadim\source\repos\Tyuiu.DolgushinVA.Sprint6\Tyuiu.DolgushinVA.Sprint6.Task7.V15\bin\Debug\InPutFileTask7V15.csv";
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
             bool wait = true;

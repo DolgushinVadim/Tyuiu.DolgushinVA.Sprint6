@@ -31,7 +31,7 @@ namespace Tyuiu.DolgushinVA.Sprint6.Task7.V15.Lib
             {
                 for (int c = 0; c < colum; c++)
                 {
-                    if ((c == 7) && (matrix[r, c] < 10) && (matrix[r, c] % 3 == 0) && (matrix[r, c] != 0))
+                    if ((c == 6) && (matrix[r, c] < 10) && (matrix[r, c] % 3 == 0) && (matrix[r, c] != 0))
                     {
                         matrix[r, c] = 3;
                     }

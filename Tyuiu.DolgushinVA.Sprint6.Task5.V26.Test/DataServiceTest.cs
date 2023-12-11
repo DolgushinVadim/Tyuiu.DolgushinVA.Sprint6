@@ -11,7 +11,7 @@ namespace Tyuiu.DolgushinVA.Sprint6.Task5.V26.Test
         [TestMethod]
         public void ValidLoadFromDataFile()
         {
-            string path = @"C:\DataSprint6\InPutFileTask5V26.txt";
+            string path = @"C:\Users\vadim\source\repos\Tyuiu.DolgushinVA.Sprint6\Tyuiu.DolgushinVA.Sprint6.Task5.V26\bin\Debug\InPutFileTask5V26.txt";
             FileInfo fileInfo = new FileInfo(path);
             bool fileExists = fileInfo.Exists;
             bool wait = true;
